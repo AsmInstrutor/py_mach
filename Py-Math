@@ -1,0 +1,52 @@
+#!/bin/python3
+print("""\033[1;36m
+    @:::::::::@:@@@@@@@:@@@@@@@@@@:@:::::::@:
+    @@:::::::@@:@:::::@:::::@::::;;@:::::::@:
+    @:@:::::@:@:@:;:::@:::::@::::;:@:::::::@:
+    @::@:::@::@:@:::::@:::::@::::;;@@@@@@@@@:
+    @::;@:@:::@:@@@@@@@:::::@::::;;@;::::::@:
+    @::::@::::@:@:::::@::;;;@:;::;;@:::::::@;
+    @:::::::::@:@:::::@:::::@::::;;@;;:;;;;@:
+    \033[0;0m\033[1;31mBy: \033[1;33mJankees Softwares\033[0;0m
+    """)
+
+print("""\033[1;33m
+[01] - Soma
+[02] - Subtração
+[03] - Divisão
+[04] - Raiz Quadrada
+[05] - Multiplicação
+[06] - Triangulo Retangulo
+        \033[0;0m""")
+aux = input("\033[1;36m[-] Sua escolha:\033[0;0m ")
+if aux == "01":
+    a = float(input("\033[1;32m[-] Valor A:\033[0;0m "))
+    b = float(input("\033[1;32m[-] Valor B:\033[0;0m "))
+    s = a+b
+    print(f"[!] Resultado: {s}")
+elif aux == "02":
+    a = float(input("\033[1;32m[-] Valor A:\033[0;0m "))
+    b = float(input("\033[1;32m[-] Valor B:\033[0;0m "))
+    s = a-b
+    print(f"[!] Resultado: {s}")
+elif aux == "03":
+    a = float(input("\033[1;32m[-] Valor A:\033[0;0m "))
+    b = float(input("\033[1;32m[-] Valor B:\033[0;0m "))
+    d = a/b
+    print(f"[!] Resultado: {d}")
+elif aux == "04":
+    r = float(input("\033[1;32m[-] Valor:\033[0;0m "))
+    R = r**0.5
+    print(f"[!] Resultado: {R}")
+elif aux == "05":
+    a = float(input("\033[1;32m[-] Valor A:\033[0;0m "))
+    b = float(input("\033[1;32m[-] Valor B:\033[0;0m "))
+    m = a*b
+    print(f"[!] Resultado: {m}")
+elif aux == "06":
+    b = float(input("\033[1;32m[-] Valor da base:\033[0;0m "))
+    h = float(input("\033[1;32m[-] Valor da altura:\033[0;0m "))
+    A = (b*h)/2
+    print(f"[!] Resultado: {A}")
+else:
+    print(f"\033[1;31m[!!] Escolha não listada!\033[0;0m")
