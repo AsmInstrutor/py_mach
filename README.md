@@ -13,11 +13,11 @@
      
    ___Agora vamos clonar o pacote da ferramenta:___
    
-     git clone 
+     git clone https://github.com/AsmInstrutor/py_math.git
      
    ___Agora vamos executar:___
      
-     cd py_mach
-     python Py-Mach
+     cd py_math
+     python Py-Math
      
      
